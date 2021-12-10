@@ -45,7 +45,10 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/php",
+              "src/.htsccess",
+              "src/web.config"
             ],
             "styles": [
               "src/styles.css"
