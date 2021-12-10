@@ -3,16 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainComponent } from './main/main.component';
+import { NavigationComponentComponent } from './navigation-component/navigation-component.component';
+import { HttpClientModule } from '@angular/common/http';
+import { StaticPageComponentComponent } from './static-page-component/static-page-component.component';
+import {StaticPageService} from './static-page.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    NavigationComponentComponent,
+    StaticPageComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [StaticPageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
