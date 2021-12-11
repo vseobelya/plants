@@ -19,7 +19,9 @@ const routes: Routes = [
      { path: '**', component: StaticPageComponentComponent, data: {
      fileName: '404.html',
      title: 'Ошибка'
-     }}
+     }},
+
+     { path: 'user', loadChildren: 'app/users.module#UsersModule' }
 ];
 
 @NgModule({
