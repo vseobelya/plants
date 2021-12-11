@@ -8,6 +8,7 @@ import { NavigationComponentComponent } from './navigation-component/navigation-
 import { HttpClientModule } from '@angular/common/http';
 import { StaticPageComponentComponent } from './static-page-component/static-page-component.component';
 import {StaticPageService} from './static-page.service';
+import {AuthService} from './auth.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import {StaticPageService} from './static-page.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [StaticPageService],
+  providers: [StaticPageService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

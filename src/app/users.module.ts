@@ -6,7 +6,7 @@ import { UsersRoutingModule } from './users-routing/users-routing.module';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
 import { UserDeleteComponent } from './user-delete/user-delete.component';
-
+import { UsersService } from './users.service';
 
 
 @NgModule({
@@ -17,7 +17,9 @@ import { UserDeleteComponent } from './user-delete/user-delete.component';
   ],
   imports: [
     CommonModule,
-    UsersRoutingModule
-  ]
+    UsersRoutingModule,
+    FormsModule
+  ],
+  providers: [UsersService]
 })
 export class UsersModule { }
